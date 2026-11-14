@@ -1,32 +1,73 @@
-# React + TypeScript + Vite
+# 🍕 Pizzacı Dükkanı (Pizza Craft Studio)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Etkileşimli, gerçek zamanlı ve modern bir sanal pizza hazırlama ve sipariş stüdyosu. Malzemelerinizi sürükleyip bırakarak kendi gurme pizzanızı tasarlayın, taş fırında pişirin ve siparişinizi oluşturun!
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Öne Çıkan Özellikler
 
-## React Compiler
+* **🎨 Etkileşimli Pizza Tasarımı:**
+  * **Taban & Sos:** İnce, Geleneksel veya Kenar Dolgulu hamur; Domates, Sarımsaklı, BBQ veya Acı sos ve peynir çeşitleri.
+  * **Sürükle & Bırak (Drag & Drop):** Malzemeleri doğrudan pizzanın üzerine sürükleyin veya panele tıklayarak ekleyin.
+  * **Konumlandırma & Taşıma:** Eklenen malzemeleri pizza üzerinde dilediğiniz gibi sürükleyip yerini değiştirin; silmek için üzerindeki butona tek tıkla basın.
+  * **Dairesel Alan Koruması:** Malzemelerin pizza kenarına (hamur kısmına) taşmasını önleyen %100 dairesel sınır matematiği.
+* **🔥 Taş Fırın Pişirme Deneyimi:**
+  * Görsel pişme ilerlemesi ve dilediğinizde tek tıkla geçebileceğiniz "Animasyonu Geç" seçeneği.
+* **📋 Detaylı Besin & Fiyat Analizi:**
+  * Kalori, karbonhidrat, protein, yağ ve toplam tutarın gerçek zamanlı hesaplanması.
+* **💳 Kapsamlı Ödeme & Sipariş Modalı:**
+  * Teslimat bilgileri (Ad-Soyad, Telefon, Adres).
+  * Kurye için özel **Sipariş Notu** alanı.
+  * Teslimat hızı seçimi (VIP Jet Kurye / Standart).
+  * Kredi Kartı, Kapıda Nakit ve Yemek Kartı ödeme yöntemleri.
+  * Başarılı sipariş sonrası konfeti ve takip ekranı.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## 🛠️ Kullanılan Teknolojiler
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+* **React 19** & **TypeScript**
+* **Vite 8**
+* **Tailwind CSS v4**
+* **Framer Motion** (Akıcı sürükle-bırak ve arayüz animasyonları)
+* **Lucide React** (Modern simgeler)
+* **Canvas Confetti**
+* **Oxlint** (Yüksek hızlı linter)
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+---
+
+## 🚀 Projeyi Çalıştırma
+
+Projeyi bilgisayarınızda yerel olarak çalıştırmak için aşağıdaki adımları izleyin:
+
+### 1. Depoyu Klonlayın
+```bash
+git clone https://github.com/loxiwwxd/pizzaci-dukkani.git
+cd pizzaci-dukkani
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+### 2. Bağımlılıkları Yükleyin
+```bash
+npm install
+```
+
+### 3. Geliştirme Sunucusunu Başlatın
+```bash
+npm run dev
+```
+
+Komutu çalıştırdıktan sonra tarayıcınızda açılan adrese gidin:  
+👉 **`http://localhost:5173`**
+
+---
+
+## 📦 Diğer Komutlar
+
+* **Üretim Derlemesi (Build):**
+  ```bash
+  npm run build
+  ```
+* **Kod Kalitesi ve Linter Kontrolü:**
+  ```bash
+  npm run lint
+  ```
